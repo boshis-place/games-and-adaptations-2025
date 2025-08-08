@@ -47,7 +47,7 @@ function GoToNextPart() {
   const part = parts[currPart]
   const padded = currPart.toString().padStart(2, "0")
 
-  $film.src = `part${padded}`
+  $film.src = `part${padded}.html`
   $part.innerHTML = currPart === 0
     ? `King Kong`
     : `King Kong adaptation part ${padded}`
