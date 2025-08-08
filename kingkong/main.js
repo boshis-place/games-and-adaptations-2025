@@ -34,7 +34,7 @@ function GoToNextPart() {
     $film.hidden = true
     $title.hidden = false
     $button.innerHTML = "play"
-  } else if (nextPart < parts.length) {
+  } else if (nextPart < parts.length - 1) {
     $button.innerHTML = "next"
     $film.hidden = false
     $title.hidden = true
