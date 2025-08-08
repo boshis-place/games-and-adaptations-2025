@@ -1,0 +1,78 @@
+<head>
+  <title>indiana jones the downpour game</title>
+  <script type="module" src="main.js"></script>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+
+    .screen {
+      position: absolute;
+      top: 18%;
+      left: 30%;
+      width: 44%;
+      height: 35%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .button {
+      width: 20%;
+    }
+
+    .info {
+      width: 50%;
+    }
+
+    .meta {
+      height: 60px;
+      width: 20%;
+      position: absolute;
+      top: 54%;
+      left: 48%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .content {
+      height: 100%;
+      width: 100%;
+    }
+
+    .title {
+      width: 95%;
+    }
+
+    .theater {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="screen">
+    <img class="title content" id="title" src="./logo.jpg">
+    <iframe class="content" id="film"></iframe>
+  </div>
+
+  <img class="theater" src="./movietheater.png">
+
+  <div class="meta">
+    <div class="info">
+      <div id = "part">part 00</div>
+      <div> by <span id = "author">author</span></div>
+      <div id = "description">description</div>
+    </div>
+
+    <button class="button" id="button">
+      button
+    </button>
+  </div>
+</body>
